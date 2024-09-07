@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sankalp Biswal's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	
+
+
+<style>
+
+	.one-third {
+		background-size: contain; /* Ensure the entire image fits inside */
+		background-position: center bottom; /* Center horizontally, align shoes at bottom */
+		background-repeat: no-repeat; /* Prevent repeating background */
+		height: 100vh; /* Full viewport height */
+		padding-top: 120px; /* Push the image down to avoid the navbar */
+	  }
+	  
+	  @media (max-width: 768px) {
+		.one-third {
+		  background-size: cover; /* For smaller screens, cover but don't zoom out too much */
+		  height: 70vh; /* Adjust height for smaller screens */
+		  background-position: center bottom; /* Keep focus on lower part for mobile */
+		}
+	  
+		.one-forth {
+		  width: 100%; /* Full width for content */
+		}
+	  
+		#home-section {
+		  flex-direction: column;
+		}
+	  }
+	  
+
+  
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+/* About Image Styling */
+.about-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    max-width: 100%; /* Ensures image is fully responsive */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures uniform scaling */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Layout adjustments for About section */
+.ftco-about .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .ftco-about .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-img img {
+        max-width: 80%; /* Adjusts image size on smaller screens */
+        margin: 0 auto; /* Center aligns image */
+    }
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+.icon {
+	font-size: 48px; /* Adjust the size of the icons */
+	color: #333; /* Change color to match your theme */
+  }
+  
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* Additional CSS for Experience Section */
+.experience-section {
+	display: flex; /* Enables flexbox layout */
+	justify-content: center; /* Centers content horizontally */
+	align-items: center; /* Centers content vertically */
+	min-height: 100vh; /* Optional: Makes the section at least the height of the viewport */
+  }
+  
+/* Ensure the experience-box has its natural size */
+.experience-box {
+    padding: 20px;
+    background-color: #282828; /* Match the background */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 100%; /* Prevent it from expanding too much */
+    width: auto; /* Ensure it retains natural width */
+    margin: 20px auto; /* Center it with margin */
+}
+
+/* Ensure uniformity for resume-wrap as well */
+.resume-wrap {
+    background-color: #282828;
+    color: #fff;
+}
+
+
+/* Education section */
+/* Education section styles */
+.education-card {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	margin-bottom: 20px;
+  }
+  
+  .education-card:hover {
+	background-color: #444;
+	transform: translateY(-5px);
+  }
+  
+  .education-card .date {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #f39c12; /* Accent color */
+  }
+  
+  .education-card h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-top: 10px;
+  }
+  
+  .education-card .position {
+	display: block;
+	font-size: 1.1rem;
+	color: #ccc;
+	margin-top: 5px;
+  }
+  
+  .education-card .location {
+	display: block;
+	font-size: 1rem;
+	color: #aaa;
+	margin-top: 3px;
+  }
+  
+  .education-card p {
+	font-size: 0.9rem;
+	color: #ddd;
+	margin-top: 15px;
+  }
+  
+  /* Add some margin between the cards */
+  #education-section .row .col-md-6 {
+	margin-bottom: 30px;
+  }
+  
+  /* Ensure consistent section padding */
+  #education-section {
+	padding: 60px 0;
+  }
+
+  /* Experience section*/
+  /* Experience section styles */
+.experience-card {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	margin-bottom: 20px;
+	max-width: 10000px;
+  }
+  
+  .experience-card:hover {
+	background-color: #444;
+	transform: translateY(-5px);
+  }
+  
+  .experience-card .date {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #f39c12; /* Accent color */
+  }
+  
+  .experience-card h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-top: 10px;
+  }
+  
+  .experience-card .company {
+	display: block;
+	font-size: 1.1rem;
+	color: #ccc;
+	margin-top: 5px;
+  }
+  
+  .experience-card .location {
+	display: block;
+	font-size: 1rem;
+	color: #aaa;
+	margin-top: 3px;
+  }
+  
+  .experience-card ul {
+	font-size: 0.9rem;
+	color: #ddd;
+	margin-top: 15px;
+	list-style: disc;
+	padding-left: 20px;
+  }
+  
+  .experience-card ul li {
+	margin-bottom: 10px;
+  }
+  
+  /* Add some margin between the cards */
+  #experience-section .row .col-md-6 {
+	margin-bottom: 30px;
+  }
+  
+  /* Ensure consistent section padding */
+  #experience-section {
+	padding: 60px 0;
+  }
+  
+  
+
+
+
+  
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sankalp Biswal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpeg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sankalp Biswal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Musician  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Aspiring Data Scientist, AI Engineer, and Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/sankalp-biswal/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Sankalp20487" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								
+									
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									
+									
+								  
+
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								
+								<h2 class="mb-4">About Me</h2>
+								I am a passionate Data Scientist with a strong background in machine learning, data analytics, and AI. Currently pursuing a Master's in Analytics at Northeastern University, I am dedicated to leveraging data to drive insights and innovation. Apart from this I am a musician and have been playing guitar for more than 8 years now. I also love talking about automobiles and technology</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Analytics</span></li>
+									<li class="d-flex"><span>Concentration</span> <span>Applied Machine Intelligence</span></li>
+
+									<li class="d-flex"><span>Language</span> <span>English, Hindi</span></li>
+							
+									
+								
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="12">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/sankalp-biswal/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	
+	  <section id="skills-section" class="ftco-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Technical Skills</h2>
+			  <p>Technologies I am proficient in:</p>
+			</div>
+		  </div>
+		  <div class="skills-container">
+			<!-- Programming & Libraries -->
+			<div class="skill-box">
+			  <i class="fab fa-python"></i>
+			  <h4>Python</h4>
+			  <p>(scikit-learn, Pandas, NumPy, Matplotlib, Keras)</p>
+			</div>
+			<div class="skill-box">
+			  <i class="fab fa-r-project"></i>
+			  <h4>R</h4>
+			  <p>(ggplot2, dplyr, tidyr, caret)</p>
+			</div>
+	  
+			<!-- Big Data & Processing -->
+			<div class="skill-box">
+			  <i class="fas fa-cloud"></i>
+			  <h4>Databricks</h4>
+			  <p>(Apache Spark, Delta Lake)</p>
+			</div>
+			<div class="skill-box">
+			  <i class="fab fa-microsoft"></i>
+			  <h4>Azure</h4>
+			  <p>(Blob Storage)</p>
+			</div>
+	  
+			<!-- Databases -->
+			<div class="skill-box">
+			  <i class="fas fa-database"></i>
+			  <h4>SQL</h4>
+			  <p>(MySQL)</p>
+			</div>
+	  
+			<!-- Data Visualization & Reporting -->
+			<div class="skill-box">
+			  <i class="fas fa-chart-bar"></i>
+			  <h4>Tableau</h4>
+			</div>
+			<div class="skill-box">
+			  <i class="fas fa-file-alt"></i>
+			  <h4>MS Office</h4>
+			  <p></p>
+			</div>
+	  
+			<!-- Development & Collaboration -->
+			<div class="skill-box">
+			  <i class="fas fa-bolt"></i>
+			  <h4>FastAPI</h4>
+			</div>
+			<div class="skill-box">
+			  <i class="fas fa-stream"></i>
+			  <h4>Streamlit</h4>
+			</div>
+			<div class="skill-box">
+			  <i class="fab fa-github"></i>
+			  <h4>Git/GitHub</h4>
+			  <p>(GitHub Actions)</p>
+			</div>
+			<div class="skill-box">
+			  <i class="fab fa-docker"></i>
+			  <h4>Docker</h4>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  <!-- Add Font Awesome for Icons -->
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	  
+	  <style>
+		.skills-container {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		  gap: 20px;
+		  padding: 20px;
+		}
+	  
+		.skill-box {
+		  background-color: #333;
+		  color: #fff;
+		  padding: 20px;
+		  text-align: center;
+		  border-radius: 10px;
+		  transition: transform 0.3s ease, background-color 0.3s ease;
+		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+	  
+		.skill-box h4 {
+		  margin-top: 10px;
+		  font-size: 1.2rem;
+		}
+	  
+		.skill-box i {
+		  font-size: 2.5rem;
+		  color: #f39c12;
+		}
+	  
+		.skill-box:hover {
+		  background-color: #444;
+		  transform: scale(1.05);
+		}
+	  
+		.skill-box p {
+		  font-size: 0.9rem;
+		  color: #ccc;
+		}
+	  </style>
+	  
+	  
+	  
+
+
+
+	
+    <!--<section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">Resume</h2>
+            <p>With extensive experience in data science and AI, I specialize in developing data-driven solutions that enhance decision-making and operational efficiency. My technical proficiency includes Python, SQL, R, and tools like PyTorch, TensorFlow, Tableau, FastAPI, and LangChain. I am particularly interested in roles such as Data Analyst, Data Scientist, and AI Engineer.</p>
+          </div>
+        </div>
+
+		<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+           <h3 class="mb-4">Education</h3>
+			<div class="underline"></div>
+          </div>
+        </div>
+		
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-Present</span>
+    					<h2>Master's in Analytics</h2>
+    					<span class="position">Northeastern University</span>
+						<br>
+						<span class="position">Boston, United States</span>
+						<br>
+						<br>
+    					<p class="mt-4">Relevant Coursework: Probability and Statistics, Database Management Systems, Data Mining Applications, Intermediate Analytics, Data Visualization, Data Management and Big Data</p>
+    				</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2021</span>
+    					<h2>Bachelor's of Technology in Computer Science Engineering</h2>
+    					<span class="position">Jaypee Institute of Information Technology</span>
+						<br>
+						<span class="position">Noida, India</span>
+    					<p class="mt-4">Relevant Courses: Probability and Random Process, Database Systems and Web, Algorithms and Problem Solving, Software Engineering, Computer Networks, and Data Structures</p>
+    				</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+	</section>-->
+
+	<section id="resume-section" class="ftco-section">
+		<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">Resume</h2>
+            <p>With extensive experience in data science and AI, I specialize in developing data-driven solutions that enhance decision-making and operational efficiency. My technical proficiency includes Python, SQL, R, and tools like PyTorch, TensorFlow, Tableau, FastAPI, and LangChain. I am particularly interested in roles such as Data Analyst, Data Scientist, and AI Engineer.</p>
+          </div>
+        </div>
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Education</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="education-card">
+				<span class="date">2023-Present</span>
+				<h2>Master's in Analytics</h2>
+				<span class="position">Northeastern University</span>
+				<span class="location">Boston, United States</span>
+				<p class="mt-4">
+					<br>
+				  Relevant Coursework: Probability and Statistics, Database Management Systems, Data Mining Applications, Intermediate Analytics, Data Visualization, Data Management, Big Data
+				</p>
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <div class="education-card">
+				<span class="date">2017-2021</span>
+				<h2>Bachelor's of Technology in Computer Science Engineering</h2>
+				<span class="position">Jaypee Institute of Information Technology</span>
+				<span class="location">Noida, India</span>
+				<p class="mt-4">
+				  Relevant Courses: Probability and Random Process, Database Systems and Web, Algorithms and Problem Solving, Software Engineering, Computer Networks, Data Structures
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+
+	  <section id="experience-section" class="ftco-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Experience</h2>
+			</div>
+		  </div>
+		  <div class="row justify-content-center"> <!-- Added justify-content-center -->
+			<div class="col-md-8"> <!-- Adjust width as needed (e.g., col-md-8 or col-md-6) -->
+			  <div class="experience-card">
+				<span class="date">2021-2022</span>
+				<h2>Data Analyst</h2>
+				<span class="company">Ernst and Young LLP</span>
+				<span class="location">Gurugram, India</span>
+				<ul class="mt-4">
+				  <li>Co-authored and presented a detailed Point of View (POV) deck on the NBFC and MFI industries, which was later utilized by senior partners at a major banking summit.</li>
+				  <li>Analyzed data and conducted a thorough vendor evaluation for Samunnati’s digital transformation, optimizing the selection of technological solutions.</li>
+				  <li>Designed and analyzed user journey frameworks, contributing to the development of a new customer-facing application and improving the overall user experience.</li>
+				  <li>Worked with the EY UAE team on a digital transformation proposal for a Middle Eastern bank, providing critical data insights and refining analytical approaches.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+	  
+	
+
+
+		<!--<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+            <h3 class="mb-4">Experience</h3>
+			<div class="underline"></div>
+          </div>
+        </div>
+		<br>
+		
+			<div class="experience-box">
+		
+			<div class="row justify-content-center pb-5">
+    			<div class="resume-wrap ftco-animate">
+					<span class="date">2021-2022</span>
+					<h2>Data Analyst</h2>
+					<span class="position">Ernst and Young LLP</span>
+					<br>
+					<span class="position">Gurugram, India</span>
+					<p class="mt-4">
+						<ul>
+							<li>Co-authored and presented a detailed Point of View (POV) deck on the NBFC and MFI industries, which was later utilized by senior partners at a major banking summit.</li>
+							<li>Analyzed data and conducted a thorough vendor evaluation for Samunnati’s digital transformation, optimizing the selection of technological solutions.</li>
+							<li>Designed and analyzed user journey frameworks, contributing to the development of a new customer-facing application and improving the overall user experience.</li>
+							<li>Worked with the EY UAE team on a digital transformation proposal for a Middle Eastern bank, providing critical data insights and refining analytical approaches.</li>
+						</ul>
+					</p>
+				</div>
+    		</div>
+		</div>-->
+	
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1uMq79usDyw4QreTDNwjBjqhv3lVh2tRc/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download/View Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+		
+    
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the my Data Analytics projects on SQL, Python, R, & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Sankalp20487/ipedsllm" class="block-20 zoom-effect" style="background-image: url('images/AI Chatbot.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+				<br>
+                <h3 class="heading"><a href="https://github.com/Sankalp20487/ipedsllm">Text-to-Sql LLM Chatbot | University Explorer Chatbot </a></h3>
+                <p>Created a chatbot to help students find up to date information regarding colleges in the US. This is a RAG implemetation of chatbot which converts Natural language into complex Sql queries to retrieve data from government websites such as ipeds.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+			
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Sankalp20487/FIFA_Analytics_using_ML" class="block-20 zoom-effect" style="background-image: url('images/FIFA_Analytics.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+				<br>
+                <h3 class="heading"><a href="https://github.com/Sankalp20487/FIFA_Analytics_using_ML">FIFA Analytics using Machine Learning</a></h3>
+                <p>Predicted player performance ratings using Lasso Regression, Classified player position based on performace attributes using KNN with Bagging, Tested age vs pace using H-Testing, and Predicted market values using Stepwise Linear Regression </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Sankalp20487/Chicago-Traffic-Crash-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Bigdata_traffic_analysis.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+				<br>
+                <h3 class="heading"><a href="https://github.com/Sankalp20487/Chicago-Traffic-Crash-Analysis">Chicago Traffic Crash Analysis Using Big Data
+
+				</a></h3>
+                
+				<p>Leveraged Lambda Architecture to analyze 1.85 million traffic crash records from Chicago. Using Databricks, Apache Spark, and Delta Lake, a data pipeline was built for streaming and batch processing. The results are visualized in an interactive dashboard, offering insights on crash locations, weather, and injury severity to guide traffic safety improvements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sankalp20487/ZomatoDataAnalysis-EndToEndEDA" class="block-20 zoom-effect" style="background-image: url('images/Zomato.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Sankalp20487/ZomatoDataAnalysis-EndToEndEDA">Food Delivery App EDA | Zomato EDA</a></h3>
+				  <p>Conducted EDA on a dataset of different restaurants across 13 Indian metros, focusing on ratings, prices, and cuisines. Cleaned data, imputed missing values, and created visualizations.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Sankalp20487/Hire-Musician-SQL-Project" class="block-20 zoom-effect" style="background-image: url('images/Hire_musicians.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  
+				  <h3 class="heading"><a href="https://github.com/Sankalp20487/Hire-Musician-SQL-Project">Hire Musician</a></h3>
+				  <br>
+				  <p>Designed the database schema and backend for a platform to simplify hiring and booking musicians. This project lays the groundwork for a seamless, user-friendly experience in artist discovery and management.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sankalp20487/Financial-Time-Series-Forecasting" class="block-20 zoom-effect" style="background-image: url('images/Forecasting_Time_series.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Sankalp20487/Financial-Time-Series-Forecasting">Financial Time Series Forecasting</a></h3>
+				  <br>
+				  <p>This project involved forecasting the stock prices of Apple Inc. (AAPL), Honeywell (HON), and dry wine prices using time series models like exponential smoothing and ARIMA. I conducted statistical tests to validate the models, providing accurate predictions and insights into future price trends.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	<br>
+	<div class="row d-flex justify-content-center">  
+		<!--<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/Sankalp20487/ZomatoDataAnalysis-EndToEndEDA" class="block-20 zoom-effect" style="background-image: url('images/Zomato.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Sankalp20487/ZomatoDataAnalysis-EndToEndEDA">Food Delivery App EDA | Zomato EDA</a></h3>
+			  <p>Conducted EDA on a dataset of different restaurants across 13 Indian metros, focusing on ratings, prices, and cuisines. Cleaned data, imputed missing values, and created visualizations.</p>
+			</div>
+		  </div>
+		</div>-->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/Sankalp20487/Profit-Maximization-Linear-Programming/tree/main" class="block-20 zoom-effect" style="background-image: url('images/inventory_optimization.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Sankalp20487/Profit-Maximization-Linear-Programming/tree/main">Profit Maximization Using Linear Programming
+
+			  </a></h3>
+			  <p>This project uses linear programming in Excel to maximize the monthly net profit of a hardware distribution center. By optimizing inventory levels within budget and space constraints, the analysis identifies the most profitable product mix and offers insights for increasing profit through budget or space expansion.</p>
+			</div>
+		  </div>
+		</div>
+		<!--<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/Sankalp20487/Financial-Time-Series-Forecasting" class="block-20 zoom-effect" style="background-image: url('images/Forecasting_Time_series.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/Sankalp20487/Financial-Time-Series-Forecasting">Financial Time Series Forecasting</a></h3>
+			  <br>
+			  <p>This project involved forecasting the stock prices of Apple Inc. (AAPL), Honeywell (HON), and dry wine prices using time series models like exponential smoothing and ARIMA. I conducted statistical tests to validate the models, providing accurate predictions and insights into future price trends.</p>
+			</div>
+		  </div>
+		</div>-->
+	 </div>
+		 
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Sankalp20487" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Boston, USA</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel:+1-617-256-1543">+1-617-256-1543</a></p>
+
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:biswal.s@northeastern.edu">biswal.s@northeastern.edu</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1uMq79usDyw4QreTDNwjBjqhv3lVh2tRc/view?usp=drive_link">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<!--<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				--></div>
+			</div>
+				<br>
+				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Find me on  </li>
+					<!--<li class="ftco-animate"><a href=""><span class="icon-youtube"></span></a></li>-->
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/sankalp-biswal/"><span class="icon-linkedin"></span></a></li>  
+					<li class="ftco-animate"><a href="https://github.com/Sankalp20487"><span class="icon-github"></span></a></li>
+				  </ul>
+				  
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
