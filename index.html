@@ -320,6 +320,62 @@
 	padding: 60px 0;
   }
   
+  /* Mobile resolution */
+  /* General resets */
+html, body {
+	width: 100%;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Responsive navbar */
+  .navbar {
+	padding: 0.5rem 1rem; /* Reduce padding */
+  }
+  
+  .navbar-toggler {
+	padding: 0.25rem 0.5rem;
+	font-size: 0.875rem;
+  }
+  
+  /* Hero section adjustments for mobile */
+  @media (max-width: 768px) {
+	.one-third {
+	  padding-top: 10px; /* Reduce top padding on mobile */
+	  background-size: cover; /* Change from '125% auto' to 'cover' for better fit */
+	  background-position: center center; /* Adjust background position for mobile */
+	}
+  
+	.one-forth {
+	  width: 100%;
+	  padding: 15px; /* Add padding around text */
+	}
+  
+	.hero {
+	  height: auto; /* Make hero height auto to contain all content */
+	  padding-bottom: 20px; /* Add some bottom padding */
+	}
+  }
+  
+  /* Ensure images in the 'about' section are responsive */
+  .about-img img {
+	width: 100%; /* Full width of the container */
+	height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Additional responsive settings */
+  @media (max-width: 768px) {
+	h1, h2, h3 {
+	  font-size: 20px; /* Smaller font size for headers */
+	}
+  
+	.text, .btn {
+	  font-size: 14px; /* Smaller font size for text and buttons */
+	}
+  
+	.skills-container {
+	  grid-template-columns: 1fr; /* Stack skills in one column on small screens */
+	}
+  }
   
 
 
