@@ -11,7 +11,7 @@ Welcome to my personal portfolio website! This site showcases my journey as a da
 
 ## 🌐 Live Website
 
-**[sankalp20487.github.io](https://sankalp20487.github.io)**
+**[sankalp20487.github.io](https://sankalp20487.github.io/SankalpBiswal.github.io/)**
 
 ## 👨‍💻 About Me
 
