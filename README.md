@@ -1,10 +1,17 @@
-# 📊 Sankalp Biswal - Data Scientist Portfolio
+# Sankalp Biswal - Data Scientist Portfolio
 
 Welcome to my personal portfolio website! This site showcases my journey as a data scientist, featuring projects, experience, and skills in machine learning, analytics, and AI systems.
 
+![Profile Views](https://komarev.com/ghpvc/?username=Sankalp20487&color=brightgreen&style=flat&label=PROFILE+VIEWS)
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Sankalp20487&show_icons=true&theme=dark&count_private=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sankalp20487&layout=compact&theme=dark" width="48%" />
+</div>
+
 ## 🌐 Live Website
 
-**[sankalp20487.github.io](https://sankalp20487.github.io)**
+**[sankalp20487.github.io](https://sankalp20487.github.io/SankalpBiswal.github.io/)**
 
 ## 👨‍💻 About Me
 
